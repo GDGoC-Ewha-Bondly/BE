@@ -1,4 +1,7 @@
 package com.gdgoc.bondly.repository;
 
-public interface SnsAppRepository {
+import com.gdgoc.bondly.domain.SnsApp;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SnsAppRepository extends JpaRepository<SnsApp, Long> {
 }

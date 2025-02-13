@@ -1,4 +1,7 @@
 package com.gdgoc.bondly.service;
 
-public class RelationshipService {
+import org.springframework.stereotype.Service;
+
+@Service
+public class FriendService {
 }

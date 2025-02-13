@@ -1,4 +1,7 @@
 package com.gdgoc.bondly.repository;
 
-public interface SnsInsightRepository {
+import com.gdgoc.bondly.domain.SnsInsight;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SnsInsightRepository extends JpaRepository<SnsInsight, Long> {
 }

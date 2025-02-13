@@ -1,4 +1,7 @@
 package com.gdgoc.bondly.repository;
 
-public interface QuizeResponseRepository {
+import com.gdgoc.bondly.domain.QuizResponse;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface QuizResponseRepository extends JpaRepository<QuizResponse, Long> {
 }

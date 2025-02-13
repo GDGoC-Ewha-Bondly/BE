@@ -1,4 +1,7 @@
 package com.gdgoc.bondly.repository;
 
-public interface ParentshipRepository {
+import com.gdgoc.bondly.domain.Parentship;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ParentshipRepository extends JpaRepository<Parentship, Long> {
 }
