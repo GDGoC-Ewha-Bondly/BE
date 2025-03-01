@@ -18,10 +18,11 @@ import java.time.LocalDate;
 public class SnsInsight {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer insightId;
-    private LocalDate date;
+    private Long insightId;
+    private LocalDate localDate;
     private String insightContent;
+
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private User userId;
 }

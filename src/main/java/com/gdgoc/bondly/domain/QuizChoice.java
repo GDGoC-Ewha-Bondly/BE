@@ -15,7 +15,7 @@ import lombok.Setter;
 public class QuizChoice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer choiceId;
+    private Long choiceId;
     @ManyToOne
     @JoinColumn(name = "question_id", nullable = false)
     private QuizQuestion question;

@@ -17,11 +17,15 @@ import java.time.LocalDate;
 public class SnsUsage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer usageId;
-    private LocalDate date;
-    private String appId;
+    private Long usageId;
+    private LocalDate localDate;
     private Integer usageTime;
+
+    @ManyToOne
+    @JoinColumn(name = "app_id", nullable = false)
+    private Long appId;
+
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private User userId;
 }
