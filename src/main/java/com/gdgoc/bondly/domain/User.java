@@ -23,7 +23,7 @@ public class User {
 
     @Column(unique = true)
     private String id;
-
+  
     private String password;
     private LocalDate birthday;
     private LocalDateTime registeredAt;
