@@ -17,7 +17,7 @@ import java.time.LocalDate;
 public class QuizQuestion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer questionId;
+    private Long questionId;
     private String questionContent;
     private LocalDate date;
     private Integer score;

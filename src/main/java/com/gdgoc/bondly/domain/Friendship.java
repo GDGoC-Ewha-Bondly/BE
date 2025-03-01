@@ -15,7 +15,7 @@ import lombok.Setter;
 public class Friendship {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer friendshipId;
+    private Long friendshipId;
     @ManyToOne
     @JoinColumn(name = "sender_id", nullable = false)
     private User sender;

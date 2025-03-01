@@ -15,7 +15,7 @@ import lombok.Setter;
 public class Parentship {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer parentshipId;
+    private Long parentshipId;
     @ManyToOne
     @JoinColumn(name = "child_id", nullable = false)
     private User child;
