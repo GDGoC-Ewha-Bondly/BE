@@ -18,15 +18,18 @@ import java.time.LocalDateTime;
 public class QuizResponse {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer responseId;
+    private Long responseId;
+
     @ManyToOne
     @JoinColumn(name = "question_id", nullable = false)
     private QuizQuestion question;
+
     @ManyToOne
     @JoinColumn(name = "choice_id", nullable = false)
     private QuizChoice choice;
+
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private User userId;
     private LocalDateTime responsedAt;
 }

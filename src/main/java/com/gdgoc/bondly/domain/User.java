@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Getter
 @Setter
@@ -18,15 +17,19 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer userId;
+    private Long userId;
     private String name;
     private String phone;
+
+    @Column(unique = true)
     private String id;
+
     private String password;
     private LocalDate birthday;
     private LocalDateTime registeredAt;
     private Boolean isParent;
     private Integer code;
+    private Integer usage_goal;
 }
 
 

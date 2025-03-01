@@ -17,10 +17,11 @@ import java.time.LocalDate;
 public class SnsReview {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer reviewId;
-    private LocalDate date;
+    private Long reviewId;
+    private LocalDate localDate;
     private String reviewContent;
+
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private User userId;
 }

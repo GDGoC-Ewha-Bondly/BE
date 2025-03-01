@@ -15,6 +15,6 @@ import lombok.Setter;
 public class SnsApp {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer appId;
+    private Long appId;
     private String appName;
 }
